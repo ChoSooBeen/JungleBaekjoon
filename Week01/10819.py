@@ -9,6 +9,25 @@ nums = list(map(int, sys.stdin.readline().split()))
 # https://cijbest.tistory.com/12 참고
 nums_list = list(permutations(nums, N))
 
+# 재귀적으로 순열 생성하기
+# https://velog.io/@yeseolee/python으로-순열과-조합-직접-구현하기 참고
+# def permutation(arr, r):
+#     arr = sorted(arr)
+#     used = [0 for _ in range(len(arr))]
+
+#     def generate(chosen, used):
+#         if len(chosen) == r:
+#             print(chosen)
+#             return
+#         for i in range(len(arr)):
+#             if not used[i]:
+#                 chosen.append(arr[i])
+#                 used[i] = 1
+#                 generate(chosen, used)
+#                 used[i] = 0
+#                 chosen.pop()
+#     generate([], used)
+
 result = 0
 
 for li in nums_list:

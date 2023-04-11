@@ -6,6 +6,7 @@ row = [0] * n
 result = 0
 
 # https://seongonion.tistory.com/103 참고
+# https://lighter.tistory.com/m/26 참고
 
 # 퀸을 놓을 수 있는 위치인지 여부 판단
 def isPromising(x) :

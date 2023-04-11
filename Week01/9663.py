@@ -1,6 +1,7 @@
 import sys
 
 n = int(sys.stdin.readline())
+# row 리스트에서 인덱스 = 행번호 / row[i] 값은 열번호
 row = [0] * n
 result = 0
 
@@ -9,8 +10,14 @@ result = 0
 # 퀸을 놓을 수 있는 위치인지 여부 판단
 def isPromising(x) :
     for i in range(x) :
-        # 1. 같은 열에 있는지 확인
-        # 2. 대각선에 존재하는지 확인
+        '''
+        1. 같은 열에 있는지 확인
+            row[x] == row[i] : x번 행과 i번 행에 놓여있는 퀸의 열 번호가 같은 경우
+        2. 대각선에 존재하는지 확인
+            row[x]-row[i] : 세로로 얼마만큼 갔는지
+            x-i : 가로로 얼마만큼 갔는지
+            위의 두 값이 같은 경우 대각선 상에 존재한다.
+        '''
         if row[x] == row[i] or abs(row[x]-row[i]) == abs(x-i) :
             return False
     return True

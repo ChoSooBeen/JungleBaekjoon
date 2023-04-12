@@ -9,8 +9,13 @@ result = 0
 
 # 사용여부를 저장할 배열
 used = [0] * N
-   
-# 순열 생성 함수
+
+# https://velog.io/@yeseolee/python으로-순열과-조합-직접-구현하기 참고
+'''
+순열 생성 함수
+chosen : 현재 선택된 원소들이 저장된 리스트 / 처음에는 빈 리스트로 준다.
+used : 각 원소의 사용 여부를 저장한 리스트
+'''
 def generate(chosen, used):
    global result
    if len(chosen) == N:

@@ -9,7 +9,7 @@ count = 0
 result = []
 for _ in range(M) :
     b = sys.stdin.readline().strip()
-    if b in dic.keys() :
+    if b in dic :
         count += 1
         result.append(b)
 

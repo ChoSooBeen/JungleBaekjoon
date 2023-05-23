@@ -1,5 +1,4 @@
 import sys
-import math
 
 N = int(sys.stdin.readline().strip())
 nums = {}       # 입력받은 수들의 등장 횟수

@@ -12,9 +12,8 @@ for _ in range(M) :
     if min_one > one :
         min_one = one
 
-count = N // 6 #6의 배수가 되도록하면서 적어도 N보다 큰 몫 구하기 
-while 6 * count <= N :
-    count += 1
+count = N // 6 + 1 #6의 배수가 되도록하면서 적어도 N보다 큰 몫 구하기 
+
 
 a = min_six * count # 묶음으로만 구매할 경우
 b = min_one * N #낱개로만 구매할 경우

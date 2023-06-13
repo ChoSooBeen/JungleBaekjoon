@@ -17,7 +17,7 @@ def dfs(depth, n) :
     for i in range(10) :
         nn = n*10 + i
         if isPrime(nn) :
-            dfs(depth+1, n*10+i)
+            dfs(depth+1, nn)
 
 prime = [2, 3, 5, 7]
 for p in prime :

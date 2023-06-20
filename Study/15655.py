@@ -19,4 +19,3 @@ for i in range(N) :
     result.clear()
     result.append(nums[i])
     dfs(1, i)
-    

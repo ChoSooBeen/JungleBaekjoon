@@ -6,7 +6,6 @@ nums.sort()
 x = int(sys.stdin.readline())
 
 count = 0
-# 1 2 3 5 7 9 10 11 12
 start = 0
 end = n-1
 

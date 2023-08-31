@@ -1,0 +1,16 @@
+import sys
+
+# 참고 https://mong9data.tistory.com/68
+
+n, k = map(int, sys.stdin.readline().split())
+coins = [int(sys.stdin.readline()) for _ in range(n)]
+
+dp = [0] * (k+1) #dp[k] = 동전의 가치가 k인 경우의 수
+dp[0] = 1
+
+for c in coins :
+    for i in range(c, k+1) :
+        if i-c >= 0 :
+            dp[i] += dp[i-c]
+
+print(dp[k])

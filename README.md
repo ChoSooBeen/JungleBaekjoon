@@ -3,6 +3,8 @@
 ## :hourglass: 2023.04.07 ~ 2023.05.04
 ## :bulb: 알고리즘 공부하기(코딩 테스트 대비)
 
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=cba06130)](https://solved.ac/cba06130/)
+
 ## Week01
 배열, 문자열, 반복문과 재귀함수, 복잡도(BigO,시간,공간), 정렬, 완전탐색
 
